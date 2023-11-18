@@ -14,7 +14,7 @@ function CollapseMenu(props){
 }
 
 function App() {
-  const [planet, setPlanets] = useState({name: "Earth", link: "Earth.glb"})
+  const [planet, setPlanets] = useState({name: "Rover", link: "MER_static.glb"})
 
   return (
     <div style = {{width: "100vw", height: "90vh"}}>
