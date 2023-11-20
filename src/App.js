@@ -34,11 +34,23 @@ function decreaseIndex(){
   return planetIndex;
 }
 
+function openFullscreen() {
+  var elem = document.getElementById("mainWindow");
+
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+
 function App() {
   const [object, setObjects] = useState(planetNames[0])
 
   return (
-    <div style = {{width: "100vw", height: "100vh"}}>
+    <div id={"mainWindow"} style = {{width: "100vw", height: "100vh"}}>
       <Canvas>
         <Stars />
         <OrbitControls />
@@ -48,7 +60,7 @@ function App() {
           <Model name={object.name} link={object.link}/>
         </Suspense>
       </Canvas>
-      <div className="ObjectName">
+      <div className="ObjectName" onClick={openFullscreen}>
         <h1>{object.name}</h1>
       </div>
       <button className="nextButton" onClick={() => setObjects(planetNames[increaseIndex()])}></button>
