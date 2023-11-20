@@ -3,45 +3,27 @@ body{
     background-color:#000000;
   }
 
-.objectName{
-  width: 100vw;
-  height: 10%;
-  text-align: center;
-  color: white;
-  background-color: black;
-  z-index: 1;
-  position: absolute;
-  bottom:0px;
-  left: 0px;
-  right: 0px;
-}
-
-.nextButton{
+.nextButton, .prevButton {
   width: 0;
   height: 0;
   z-index: 2;
   color: white;
   background-color: black;
   position: absolute;
-  right: 0px;
   top: 50vh;
+}
+
+.nextButton{
+  right: 0px;
   border-top: 25px solid transparent;
-  border-left: 50px solid #ffffff;
+  border-left: 50px solid #9c9c9c;
   border-bottom: 25px solid transparent;
 
 }
 .prevButton{
-  width: 0;
-  height: 0;
-  z-index: 2;
-  color: white;
-  background-color: black;
-  position: absolute;
   left: 0px;
-  top: 0px;
-  top: 50vh;
   border-top: 25px solid transparent;
-  border-right: 50px solid #ffffff;
+  border-right: 50px solid #9c9c9c;
   border-bottom: 25px solid transparent;
 }
 
