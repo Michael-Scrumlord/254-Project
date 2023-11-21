@@ -30,16 +30,31 @@ export function Model(props) {
         </group>
         break;
     case 'Jupiter':
-        text = <group></group>;
-        break;
+          text = <group {...props} dispose={null} scale={0.0025}>
+          <mesh geometry={nodes.cubemap.geometry} material={materials.None} />
+        </group>
+          break;
     case 'Saturn':
-        text = <group></group>;
+        text = <group {...props} dispose={null} scale={0.005}>
+        <mesh geometry={nodes.Saturn001.geometry} material={materials.None} />
+        <mesh geometry={nodes.RingsTop.geometry} material={materials.SaturnRings} />
+        <mesh geometry={nodes.RingsBottom.geometry} material={materials.SaturnRings} />
+      </group>;
         break;
     case 'Mercury':
-        text = <group></group>;
+        text = <group {...props} dispose={null} scale={0.0025}>
+        <mesh geometry={nodes.Cube008.geometry} material={materials['Default OBJ.005']} />
+      </group>;
         break;
     case 'Neptune':
-        text = <group></group>;
+        text = <group {...props} dispose={null}  scale={0.0025}>
+        <mesh geometry={nodes.Neptune.geometry} material={materials['Default OBJ.001']} rotation={[Math.PI / 2, 0, 0]} />
+      </group>;
+        break;
+    case 'Sun':
+        text = <group {...props} dispose={null}  scale={0.0025}>
+        <mesh geometry={nodes.Cube001.geometry} material={materials.None} rotation={[Math.PI / 2, 0, 0]} scale={1000} />
+      </group>;
         break;
     case 'Mars Rover':
         text = <group {...props} dispose={null} scale={1.5}>

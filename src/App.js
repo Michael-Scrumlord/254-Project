@@ -9,10 +9,15 @@ import { Suspense } from 'react';
 // 3D Source: https://www.nasa.gov/?search=gltf
 
 const planetNames = [{name: "Mars Rover", link: "MER_static.glb"}, 
-                      {name: "Earth", link: "Earth.glb"},
-                    {name: "Mars", link: "Mars.glb"},
-                    {name: "Cassini", link: "Cassini.glb"},
-                    {name: "Curiosity", link: "Curiosity.glb"}]
+                      {name: "Earth",     link: "Earth.glb"},
+                      {name: "Mars",      link: "Mars.glb"},
+                      {name: "Cassini",   link: "Cassini.glb"},
+                      {name: "Curiosity", link: "Curiosity.glb"},
+                      {name: "Jupiter",   link: "Jupiter.glb"},
+                      {name: "Mercury",   link: "Mercury_1_4878.glb"},
+                      {name: "Saturn",    link: "Saturn_1_120536.glb"},
+                      {name: "Neptune",   link: "Neptune_1_49528.glb"},
+                      {name: "Sun",   link: "Sun_1_1391000.glb"}]
 
 const rovers = [{name: "Curiosity", link: "Curiosity.glb"},
                 {name: "ISS", link: "ISS.glb"}]
