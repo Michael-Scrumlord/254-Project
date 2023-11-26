@@ -1,19 +1,24 @@
 /* NavBar.css*/
 
 .navbar {
-	background-color: #333;
+	background-color: black;
 	color: white;
-	padding: .5rem;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	z-index: 3;
+	width: 100%;
+	height: 10%;
+	position: absolute;
+	top: 0;
+	text-align: center;
 }
 
 .navbar ul {
-	list-styles: none;
+	list-style: none;
 	display: flex;
 	margin: 0;
 	padding: 0;
+	justify-content: space-around;
+	align-items: center;
+	height: 100%;
 }
 
 .navbar li {
@@ -23,9 +28,13 @@
 .navbar a {
 	color: white;
 	text-decoration: none;
-	transition: color 0.3s ease;
+	transition: color 0.3s ease, transform 0.3s ease; /* Add transform transition */
+	font-family: 'Arial', sans-serif; /* Change as needed */
+	font-size: 1.2em; /* Change as needed */
+	text-shadow: 2px 2px 4px #000000; /* Add text shadow for depth */
 }
 
 .navbar a:hover {
 	color: #ff6347;
+	transform: scale(1.1); /* Add scale transform on hover */
 }

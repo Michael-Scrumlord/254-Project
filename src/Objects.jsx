@@ -35,7 +35,7 @@ export function Model(props) {
         </group>
           break;
     case 'Saturn':
-        text = <group {...props} dispose={null} scale={0.005}>
+        text = <group {...props} dispose={null} scale={0.003}>
         <mesh geometry={nodes.Saturn001.geometry} material={materials.None} />
         <mesh geometry={nodes.RingsTop.geometry} material={materials.SaturnRings} />
         <mesh geometry={nodes.RingsBottom.geometry} material={materials.SaturnRings} />
