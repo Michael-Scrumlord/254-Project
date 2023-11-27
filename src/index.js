@@ -14,10 +14,10 @@ root.render(
     <NavBar/>
     <Routes>
 			<Route path = "/" element={<App category={0}/>} />
+			<Route path = "/about" element={<About />} />
 			<Route path = "/planets" element={<App category={0}/>} />
       <Route path = "/rovers" element={<App category={1}/>} />
 			<Route path = "/asteroids" element={<App category={2}/>} />
-      <Route path = "/about" element={<About />} />
 		</Routes>
   </Router>
 );

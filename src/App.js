@@ -62,9 +62,14 @@ function openFullscreen() {
   }
 }
 
+function setObject(props){
+
+  return planetNames[props.category][objectIndex];
+}
+
 function App(props) {
   objectCategory = props.category;
-  let [object, setObjects] = useState(planetNames[props.category][objectIndex]);
+  let [object, setObjects] = useState(setObject(props));
   return (
 		<div id={"mainWindow"} style = {{width: "100vw", height: "100vh"}}>
       <NavBar />
