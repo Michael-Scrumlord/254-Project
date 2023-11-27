@@ -110,6 +110,21 @@ export function Model(props) {
       </mesh>
     </group>;
       break;
+    case 'Eros':
+        text = <group {...props} dispose={null} scale={0.0025}>
+        <mesh geometry={nodes.eros_LP.geometry} material={materials.eros} />
+      </group>;
+      break;
+        case 'Vesta':
+        text = <group {...props} dispose={null} scale={0.0025}>
+        <mesh geometry={nodes.Vesta.geometry} material={materials.vesta} />
+      </group>;
+      break;
+        case 'Bennu':
+        text = <group {...props} dispose={null} scale={0.0025}>
+        <mesh geometry={nodes.bennu.geometry} material={materials.bennu} />
+      </group>;
+        break;
     default: 
       text=<group></group>;
       break;
