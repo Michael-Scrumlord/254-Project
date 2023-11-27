@@ -69,6 +69,7 @@ function setObject(props){
 
 function App(props) {
   objectCategory = props.category;
+  number_of_Objects = planetNames[objectCategory].length
   let [object, setObjects] = useState(setObject(props));
   return (
 		<div id={"mainWindow"} style = {{width: "100vw", height: "100vh"}}>
