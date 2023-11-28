@@ -1,10 +1,10 @@
-//import { useFrame, Canvas } from '@react-three/fiber';
-//import { AmbientLight } from 'three';
-import { MongoClient} from 'mongodb';
-import React, {useRef, useState, useEffect} from 'react';
-import {useGLTF} from "@react-three/drei";
+/* Database Dependencies
 import axios from 'axios';
 import ReactHtmlParser from 'react-html-parser';
+import { MongoClient} from 'mongodb';
+*/
+import React, {useRef, useState, useEffect} from 'react';
+import {useGLTF} from "@react-three/drei";
 
 export function Model(props) {
   const { nodes, materials } = useGLTF(props.link);
@@ -12,6 +12,8 @@ export function Model(props) {
 
   const [item, setItem] = useState(null);
 
+  // Database Fetch
+  /*
   useEffect(() => {
     // Fetch item from the server
     // Replace 'item1' with the name of the item you want to retrieve
@@ -26,7 +28,7 @@ export function Model(props) {
   }
 
   return text;
-/*  
+
   const [data, setData] = useState(null);
 
   useEffect(() => {
@@ -55,7 +57,7 @@ export function Model(props) {
 export function Model(props) {
   const { nodes, materials } = useGLTF(props.link);
   const myMesh = useRef();
-  
+  */
   let text = "";
 
   switch (props.name) {
@@ -129,7 +131,7 @@ export function Model(props) {
       </group>
         break;
     case 'Cassini':
-      text = <group {...props} dispose={null} scale={0.75}>
+      text = <group {...props} dispose={null} scale={0.5}>
       <mesh geometry={nodes._root.geometry} material={materials.transparent}>
         <mesh geometry={nodes.aluminum.geometry} material={materials.aluminum} position={[-0.01, -2.44, -4.66]} />
         <mesh geometry={nodes.black_krinkle.geometry} material={materials.black_krinkle} position={[-0.49, -0.74, 0]} />
@@ -173,5 +175,5 @@ export function Model(props) {
   return (
     text
   )
-*/
+
 }
