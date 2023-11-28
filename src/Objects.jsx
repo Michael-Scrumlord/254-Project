@@ -2,21 +2,64 @@ import React, {useRef} from 'react';
 import {useGLTF} from "@react-three/drei";
 //import { useFrame, Canvas } from '@react-three/fiber';
 //import { AmbientLight } from 'three';
+import axios from 'axios';
+import { MongoClient} from 'mongodb';
+import React, {useRef, useState, useEffect} from 'react';
+import {useGLTF} from "@react-three/drei";
+import axios from 'axios';
+import ReactHtmlParser from 'react-html-parser';
 
-// To add objects - 
-// from cmd: npx gltfjsx <path-to-glb> 
-// copy the jsx group into one of the cases below
+export function Model(props) {
+  const { nodes, materials } = useGLTF(props.link);
+  const myMesh = useRef();
+
+  const [item, setItem] = useState(null);
+
+  useEffect(() => {
+    // Fetch item from the server
+    // Replace 'item1' with the name of the item you want to retrieve
+    axios.get('http://localhost:3000/items/{props.name}')
+      .then(response => {
+        setItem(response.data);
+      });
+  }, []);
+
+  if (data) {
+    text = ReactHtmlParser(data.groupTag);
+  }
+
+  return text;
+/*  
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await axios(
+        `http://localhost:5000/?name=${props.name}`,
+      );
+ 
+      setData(result.data);
+    };
+ 
+    fetchData();
+  }, [props.name]);
+
+  let text = "";
+
+  if (data) {
+    text = ReactHtmlParser(data.groupTag);
+  }
+
+  return text;
+}
+
+
 
 export function Model(props) {
   const { nodes, materials } = useGLTF(props.link);
   const myMesh = useRef();
   
   let text = "";
-
-  // Planet Rotation
-//  useFrame(({ clock }) => {
-//    myMesh.current.rotation.y = clock.getElapsedTime() * 0.05;
-//  })
 
   switch (props.name) {
     case 'Earth':
@@ -133,4 +176,5 @@ export function Model(props) {
   return (
     text
   )
+*/
 }
