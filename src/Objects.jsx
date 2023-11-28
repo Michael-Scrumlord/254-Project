@@ -1,8 +1,5 @@
-import React, {useRef} from 'react';
-import {useGLTF} from "@react-three/drei";
 //import { useFrame, Canvas } from '@react-three/fiber';
 //import { AmbientLight } from 'three';
-import axios from 'axios';
 import { MongoClient} from 'mongodb';
 import React, {useRef, useState, useEffect} from 'react';
 import {useGLTF} from "@react-three/drei";
@@ -18,7 +15,7 @@ export function Model(props) {
   useEffect(() => {
     // Fetch item from the server
     // Replace 'item1' with the name of the item you want to retrieve
-    axios.get('http://localhost:3000/items/{props.name}')
+    axios.get('http://localhost:5000/3dObjects/{props.name}')
       .then(response => {
         setItem(response.data);
       });
