@@ -3,15 +3,14 @@ const mongoose = require('mongoose');
 const app = express();
 
 // Connect to MongoDB Atlas
-// Replace <username>, <password>, and <dbname> with your actual MongoDB Atlas username, password, and database name
-mongoose.connect('mongodb+srv://<username>:<password>@cluster0.mongodb.net/<dbname>?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect('mongodb+srv://michael-daza:bC2eL0BhEJL4UVgZ@cluster0.ig2oprr.mongodb.net/?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true});
 
 // Define a simple schema
 const ItemSchema = new mongoose.Schema({ name: String, text: String });
-const Item = mongoose.model('Item', ItemSchema);
+const Item = mongoose.model('3dObjects', ItemSchema);
 
 // Define a route to get an item by name
-app.get('/items/:name', async (req, res) => {
+app.get('/3dObjects/:name', async (req, res) => {
   const item = await Item.findOne({ name: req.params.name });
   res.json(item);
 });
