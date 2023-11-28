@@ -5,7 +5,7 @@ const About = () => {
   const students = [
     { name: 'Michael Daza', year: 'Senior', major: 'Computer Science' },
     { name: 'Victor Prieto', year: 'Senior', major: 'Computer Science' },
-    { name: 'Raja', year: 'Senior', major: 'Computer Science' },
+    { name: 'Raja Pradhan', year: 'Senior', major: 'Computer Science' },
   ];
 
   return (
