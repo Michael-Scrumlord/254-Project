@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const app = express();
 
 // Connect to MongoDB Atlas
-mongoose.connect('mongodb+srv://michael-daza:bC2eL0BhEJL4UVgZ@cluster0.ig2oprr.mongodb.net/?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect('mongodb+srv://michael-daza:<password>@cluster0.ig2oprr.mongodb.net/?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true});
 
 // Define a simple schema
 const ItemSchema = new mongoose.Schema({ name: String, text: String });
