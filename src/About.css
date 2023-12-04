@@ -1,21 +1,93 @@
-.about-me {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    background-color: #f0f0f0;
-  }
-  
-  .students-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.about-container {
+  /* Parallax background */
+  background-image: url('https://wallpapers.com/images/hd/minimalist-space-1080-x-1920-wallpaper-5v0uyqcivjaemoir.jpg'); /* Replace with your image path */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh; /* Make sure it covers the whole page */
+
+  font-family: 'Montserrat', sans-serif; /* Montserrat font */
+  color: #fff; /* Text color for visibility */
+  padding: 40px 20px;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
+}
+
+.about-title {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.mission-statement, .team-bios, .timeline, .contact-info {
+  margin-bottom: 60px;
+}
+
+.mission-statement h2, .team-bios h2, .timeline h2, .contact-info h2 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.student-card {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.student-name {
+  font-size: 1.6rem;
+  color: #16a085;
+  margin-bottom: 10px;
+}
+
+.student-detail, .student-bio {
+  font-size: 1rem;
+  color: #333; /* Dark text for contrast */
+  line-height: 1.6;
+}
+
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline-event {
+  background-color: rgba(236, 240, 241, 0.8); /* Semi-transparent */
+  padding: 15px 20px;
+  margin: 10px 0;
+  width: 80%;
+}
+
+.timeline-week {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2980b9;
+}
+
+.timeline-description {
+  margin-left: 10px;
+  color: #2c3e50;
+}
+
+.contact-info {
+  font-size: 1.2rem;
+  color: #ecf0f1; /* Light color for better visibility */
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
   .student-card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-    width: 30%;
-    margin: 10px;
-    padding: 20px;
+    flex-direction: column;
+    align-items: start;
   }
-  
+}
