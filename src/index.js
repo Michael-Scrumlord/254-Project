@@ -14,7 +14,7 @@ root.render(
   <Router>
     <NavBar/>
     <Routes>
-			{/* <Route path = "/" element={<App category={0}/>} /> */}
+			<Route path = "/" element={<Home />} />
       <Route path = "/home" element={<Home />} />
 			<Route path = "/about" element={<About />} />
 			<Route path = "/planets" element={<App category={0}/>} />
