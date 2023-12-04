@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    overflow: auto;
+}
+.home-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('https://wallpapers.com/images/hd/minimalist-space-1080-x-1920-wallpaper-5v0uyqcivjaemoir.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7);
+  }
+
+.home-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.astrologers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.home-name {
+    font-size: 1.6rem;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.home-detail, .home-bio {
+    font-size: 1rem;
+    color: #333; /* Dark text for contrast */
+    line-height: 1.6;
+}
+
+.home-detail, .home-bio {
+    font-size: 1rem;
+    color: #333; /* Dark text for contrast */
+    line-height: 1.6;
+}
+
+.home-card {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    will-change: transform;
+    animation: fadeInUp 0.8s ease-in;
+    opacity: 100;
+}
+
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

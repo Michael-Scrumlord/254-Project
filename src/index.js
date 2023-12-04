@@ -6,6 +6,7 @@ import './index.css'
 import NavBar from './NavBar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import About from './About';
+import Home from './Home'
 import Planets from './Planets';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -13,7 +14,8 @@ root.render(
   <Router>
     <NavBar/>
     <Routes>
-			<Route path = "/" element={<App category={0}/>} />
+			{/* <Route path = "/" element={<App category={0}/>} /> */}
+      <Route path = "/home" element={<Home />} />
 			<Route path = "/about" element={<About />} />
 			<Route path = "/planets" element={<App category={0}/>} />
       <Route path = "/rovers" element={<App category={1}/>} />

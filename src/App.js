@@ -19,15 +19,15 @@ const planetNames = [[{name: "Earth",     link: "Earth.glb"}, // objectCategory 
                       {name: "Mercury",   link: "Mercury.glb"},
                       {name: "Saturn",    link: "Saturn.glb"},
                       {name: "Neptune",   link: "Neptune.glb"},
-                      {name: "Sun",   link: "Sun.glb"}],
+                      {name: "Sun",       link: "Sun.glb"}],
 
                       [{name: "Curiosity", link: "Curiosity.glb"}, // objectCategory = 1; rovers
-                      {name: "Cassini",   link: "Cassini.glb"},
+                      {name: "Cassini",    link: "Cassini.glb"},
                       {name: "Mars Rover", link: "MER_static.glb"}],
 
-                      [{name: "Eros", link: "Eros.glb"}, // objectCategory = 2; asteroids
+                      [{name: "Eros",   link: "Eros.glb"}, // objectCategory = 2; asteroids
                       {name: "Vesta",   link: "Vesta.glb"},
-                      {name: "Bennu", link: "Bennu.glb"}]]
+                      {name: "Bennu",   link: "Bennu.glb"}]]
 
 let objectIndex = 0
 let objectCategory = 0
