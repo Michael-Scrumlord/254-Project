@@ -2,17 +2,17 @@
 
 .about-container {
   /* Parallax background */
-  background-image: url('https://wallpapers.com/images/hd/minimalist-space-1080-x-1920-wallpaper-5v0uyqcivjaemoir.jpg'); /* Replace with your image path */
+  background-image: url('https://wallpapers.com/images/hd/minimalist-space-1080-x-1920-wallpaper-5v0uyqcivjaemoir.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh; /* Make sure it covers the whole page */
+  min-height: 100vh;
 
   font-family: 'Montserrat', sans-serif; /* Montserrat font */
-  color: #fff; /* Text color for visibility */
+  color: #fff; /* Text color */
   padding: 40px 20px;
-  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7); /* Text shadow */
 }
 
 .about-title {
@@ -36,13 +36,13 @@
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 30px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
-  will-change: transform; /* Optimizes for animations */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  will-change: transform; 
 }
 
 .student-card:hover {
-  transform: scale(1.05); /* Slightly increase size */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow for pop-up effect */
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow */
 }
 
 .student-name {
@@ -83,8 +83,8 @@
 
 .contact-info {
   font-size: 1.2rem;
-  color: #ecf0f1; /* Light color for better visibility */
-  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
+  color: #ecf0f1; /* Light color */
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7); /* Text shadow */
 }
 
 .contact-info p {
