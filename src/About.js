@@ -3,7 +3,7 @@ import './About.css';
 
 const About = () => {
   const students = [
-    { name: 'Michael Daza', year: 'Senior', major: 'Computer Science', bio: 'Lorem ipsum dolor sit amet' },
+    { name: 'Michael Daza', year: 'Senior', major: 'Computer Science', bio: 'Interests include astronomy, music, movies' },
     { name: 'Victor Prieto', year: 'Senior', major: 'Computer Science', bio: 'Lorem ipsum dolor sit amet' },
     { name: 'Raja Pradhan', year: 'Junior', major: 'Computer Science', bio: 'Lorem ipsum dolor sit amet' },
   ];
