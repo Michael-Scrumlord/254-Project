@@ -5,7 +5,7 @@ const About = () => {
   const students = [
     { name: 'Michael Daza', year: 'Senior', major: 'Computer Science', bio: 'Interests include astronomy, music, movies' },
     { name: 'Victor Prieto', year: 'Senior', major: 'Computer Science', bio: 'Interests include AI and game design' },
-    { name: 'Raja Pradhan', year: 'Junior', major: 'Computer Science', bio: 'Interested include programming and AI' },
+    { name: 'Raja Pradhan', year: 'Junior', major: 'Computer Science', bio: 'Interests include programming and AI' },
   ];
 
   const timelineEvents = [
