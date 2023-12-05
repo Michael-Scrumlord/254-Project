@@ -4,8 +4,8 @@ import './About.css';
 const About = () => {
   const students = [
     { name: 'Michael Daza', year: 'Senior', major: 'Computer Science', bio: 'Interests include astronomy, music, movies' },
-    { name: 'Victor Prieto', year: 'Senior', major: 'Computer Science', bio: 'Lorem ipsum dolor sit amet' },
-    { name: 'Raja Pradhan', year: 'Junior', major: 'Computer Science', bio: 'Lorem ipsum dolor sit amet' },
+    { name: 'Victor Prieto', year: 'Senior', major: 'Computer Science', bio: 'Interests include AI and game design' },
+    { name: 'Raja Pradhan', year: 'Junior', major: 'Computer Science', bio: 'Interested include programming and AI' },
   ];
 
   const timelineEvents = [
